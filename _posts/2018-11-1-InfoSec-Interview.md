@@ -35,3 +35,4 @@ It can be managed from ‘/etc/selinux/config’ file, where you can enable or d
 
 ![]({{site.baseurl}}/https://cheapsslsecurity.com/blog/wp-content/uploads/2017/10/ssl-tls-handshake-process-1024x670.png)
 
+### If someone steals the server’s private key can they decrypt all previous content sent to that server?
