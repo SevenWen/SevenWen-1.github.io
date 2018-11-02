@@ -44,5 +44,16 @@ Because attacker got the private key of server and he can see call the previous 
 one should add the SSL Certificate to the Certificate Revocation List (CRL). This will alert other participants in the Public Key Infrastructure (PKI) that the certificate in question can no longer be trusted. In order to do this, you will usually need to login to the account you created with the Certificate Authority (CA) who issued the SSL Certificate or otherwise notify them of the suspected breach.
 
 ### What are some common ways that TLS is attacked,and/or what are some ways it’s been attacked in the past?
-For [64-bit block CBC mode](https://blog.cryptographyengineering.com/2016/08/24/attack-of-week-64-bit-ciphers-in-tls/), if server used one key to encrypt too many data, attacker may find a cllision of ciphertext, that (p1 xor IV1) = (p2 xor IV2). And IVs are known to attacker, so attacker can know p1 xor p2. 
+-For [64-bit block CBC mode](https://blog.cryptographyengineering.com/2016/08/24/attack-of-week-64-bit-ciphers-in-tls/), if server used one key to encrypt too many data, attacker may find a cllision of ciphertext, that (p1 xor IV1) = (p2 xor IV2). And IVs are known to attacker, so attacker can know p1 xor p2.
+- [downgrade attack](https://p16.praetorian.com/blog/man-in-the-middle-tls-ssl-protocol-downgrade-attack)
+- [Heartbleed](https://blog.cryptographyengineering.com/2014/04/08/attack-of-the-week-openssl-heartbleed/) The problem is fairly simple: there’s a tiny vulnerability — a simple missing bounds check — in the code that handles TLS ‘heartbeat’ messages. By abusing this mechanism, an attacker can request that a running TLS server hand over a relatively large slice (up to 64KB) of its private memory space. Since this is the same memory space where OpenSSL also stores the server’s private key material, an attacker can potentially obtain (a) long-term server private keys, (b) TLS session keys, (c) confidential data like passwords, (d) session ticket keys.
+- BEAST
 
+### What is Forward Secrecy?
+In cryptography, forward secrecy (FS), also known as perfect forward secrecy (PFS), is a feature of specific key agreement protocols that gives assurances your session keys will not be compromised even if the private key of the server is compromised. Forward secrecy protects past sessions against future compromises of secret keys or passwords. By generating a unique session key for every session a user initiates, even the compromise of a single session key will not affect any data other than that exchanged in the specific session protected by that particular key. 
+
+### What’s more secure, SSL, TLS, or HTTPS?
+TLS is an updated version of SSL. HTTPS appears in the URL when a website is secured by an SSL certificate.
+
+## Network Security
+### What port does ping work over?
