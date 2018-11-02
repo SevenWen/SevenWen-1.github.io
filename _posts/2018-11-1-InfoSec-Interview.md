@@ -33,6 +33,6 @@ It can be managed from ‘/etc/selinux/config’ file, where you can enable or d
 - Server receives "Change cipher spec" and switches its record layer security state to symmetric encryption using the session keys. Server sends "Server finished" message to the client.
 - Client and server can now exchange application data over the secured channel they have established. All messages sent from client to server and from server to client are encrypted using session key.
 
-![]({{site.baseurl}}/https://cheapsslsecurity.com/blog/wp-content/uploads/2017/10/ssl-tls-handshake-process-1024x670.png)
+![](https://cheapsslsecurity.com/blog/wp-content/uploads/2017/10/ssl-tls-handshake-process-1024x670.png)
 
 ### If someone steals the server’s private key can they decrypt all previous content sent to that server?
