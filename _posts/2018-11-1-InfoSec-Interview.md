@@ -33,4 +33,5 @@ It can be managed from ‘/etc/selinux/config’ file, where you can enable or d
 - Server receives "Change cipher spec" and switches its record layer security state to symmetric encryption using the session keys. Server sends "Server finished" message to the client.
 - Client and server can now exchange application data over the secured channel they have established. All messages sent from client to server and from server to client are encrypted using session key.
 
-![]({{site.baseurl}}/https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwihseGXvrTeAhUwhOAKHYejAO8QjRx6BAgBEAU&url=https%3A%2F%2Fcheapsslsecurity.com%2Fblog%2Fwhat-is-ssl-tls-handshake-understand-the-process-in-just-3-minutes%2F&psig=AOvVaw0QonH2P2IrwF__3u_Fnlls&ust=1541206076210372)
+![]({{site.baseurl}}/https://cheapsslsecurity.com/blog/wp-content/uploads/2017/10/ssl-tls-handshake-process-1024x670.png)
+
