@@ -36,3 +36,10 @@ It can be managed from ‘/etc/selinux/config’ file, where you can enable or d
 ![](https://cheapsslsecurity.com/blog/wp-content/uploads/2017/10/ssl-tls-handshake-process-1024x670.png)
 
 ### If someone steals the server’s private key can they decrypt all previous content sent to that server?
+
+Because attacker got the private key of server and he can see call the previous traffic, the attacker can decrypt the master secret and got the key for symmetric encryption. Then attacker can decrypt the traffic. 
+
+### what should the server do if its private key is lost
+
+one should add the SSL Certificate to the Certificate Revocation List (CRL). This will alert other participants in the Public Key Infrastructure (PKI) that the certificate in question can no longer be trusted. In order to do this, you will usually need to login to the account you created with the Certificate Authority (CA) who issued the SSL Certificate or otherwise notify them of the suspected breach.
+
