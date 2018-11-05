@@ -1,5 +1,6 @@
 ---
-published: false
+layout: post
+title: Web CTF: HTML - disabled buttons
 ---
 The very first web task in Roor-me remind me how bad I am at Web🌚
 Here's the [question](https://www.root-me.org/en/Challenges/Web-Client/HTML-disabled-buttons?lang=en&action_solution=voir&debut_affiche_solutions=2#pagination_affiche_solutions)
@@ -14,7 +15,7 @@ Then we can input some in the box and submit it. The page will return the flag:
 ![Screen Shot 2018-11-04 at 11.51.34 PM.png]({{site.baseurl}}/_posts/Screen Shot 2018-11-04 at 11.51.34 PM.png)
 
 Also, we can send the post request directly by python or whatever you want:
-```java
+```python
 import requests // requests module only available in Python >3
 // make a POST request with auth-login and authbutton set
 r = requests.post('http://challenge01.root-me.org/web-client/ch25/',
