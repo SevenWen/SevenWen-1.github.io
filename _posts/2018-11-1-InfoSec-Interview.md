@@ -57,3 +57,8 @@ TLS is an updated version of SSL. HTTPS appears in the URL when a website is sec
 
 ## Network Security
 ### What port does ping work over?
+The Internet Ping program works much like a sonar echo-location, sending a small packet of information containing an ICMP (Internet Control Message Protocol) ECHO_REQUEST to a specified computer, which then sends an ECHO_REPLY packet in return. ICMP is a layer 3 protocol (it doesn’t work over a port). 
+![]({{site.baseurl}}/http://3.bp.blogspot.com/-3_RDo_l9TXM/Uu6AB4phjsI/AAAAAAAACh4/DyHJ3b3Mm8I/s1600/networklayers.png)
+
+### How exactly does traceroute/tracert work at the protocol level?
+
